@@ -1,0 +1,29 @@
+
+h1 Create Users
+form(method="POST", action="/users/")
+   h5 Screen Size
+     br
+     | 11 inch
+     input(type='radio', name='screen_size', value='0')
+     span 11 inch - Included
+     br
+     | 15 inch
+     input(type='radio', name='screen_size', value='200')
+     span 15 inch - $200
+   h5 Hard Drive Size
+     hr
+     | 128 G
+     input(type='radio', name='hard_drive', value='0')
+     br
+     | 246 G
+     input(type='radio', name='hard_drive', value='200')
+   h5 Memory Size
+     hr    
+     | 8G
+     input(type='radio', name='memory_size', value='0')
+     br
+     | 16 G
+     input(type='radio', name='memory_size', value='200')
+     hr
+     button(type='submit') Create
+
